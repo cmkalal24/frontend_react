@@ -152,6 +152,6 @@ II.git clone(git regular downloads )
 -->Add a file using 'git add .\REACT-1_Intro_of_ReactJS_And_Install.js'
 -->The commit the the code using 'git commit -m "React-1_Intro_React_And_Install"'
 -->After the check the branch using 'git branch' it's a 'main'
--->Then push your docment using 'git push origin main'
+-->Then push your doc on github using 'git push origin main'
 
 */
