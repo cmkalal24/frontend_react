@@ -237,4 +237,114 @@ II.git clone(git regular downloads )
 
 
 
-// #Components - 
+// #Components - In a 'React' originated of component concept
+
+
+=>Folder Structure of "FRONTEND_REACT"
+
+I.README.md -
+-->Basic kind of documentation
+-->Basic design in this doc. if you want bold, italic, line etc..
+-->In # Getting Started with Create React App you write anything but, don't rough
+-->You can use file like "README.txt" 
+
+
+=>Whenever we create a project 'npm-node package manager' track to them
+=>Dependancy - To use external libraries
+
+
+
+II.package.json -
+-->The records keep & track to the all the dependancies
+-->Keep track of version number
+-->The list of dependancies into the package.json like "name": "frontend_react",  "version": "0.1.0" etc..
+-->Into the package.json is important two files "dependencies" & "script"
+1."script" - are those commands which we are going to run our project
+-->Into the package.json all the commands are npm command
+-->using npm command like 'npm start' to run a file if not there in package.json is show to 'error' 
+
+2."dependencies" - Two types of Dependancies
+-->'dependencies' - Actual final build on websites/if deployed the project
+-->'devdependencies' - We want testing purpose and local 
+-->If you want to directly install dependancies use command like 'npm install dependency' 
+entries are automatically created like this "react": "^18.3.1" etc..
+
+
+
+III.package-lock.json -
+-->'package-lock.json' is details entry of each & every dependencies 
+-->'package-lock.json' it's backup data to stored if you want to delete this you can &
+you can retrive the file also using command "npm install"
+
+
+
+
+IV. .gitignore -
+-->All the modules & all the files which we don't want to include on Github like '/node_modules' etc..
+
+=>How to track a git the files 
+-->You can show into the existing project folder ".git" but by default hidden. 
+   If not show the hidden file follow the below steps;
+-->You are there in existing folder go to the 'window search bar'
+-->Type 'File Explorer Options' open it. and go to the 'View' section
+-->And below are click on "Show hidden files, folder & drives" click on "Apply" & "Ok"
+
+
+
+
+IV.node_modules -
+-->package.json & package-lock.json all dependencies files stored into the "node_modules" folder
+-->"node_modules" folder downloaded all actual dependencies
+-->If we deleted 'node_modules' folder. After we use universal command "npm install"
+all the dependencies will be downloaded & automatically create into the "node_module" locker
+
+
+
+=>git clone
+=>ICANN - list of domain names - ip address - online server
+
+
+
+IV.public -
+-->public folder - index file - .html, .php, .js
+-->Into the public folder main file is "index.html"
+-->Any kind of links, images, logo into the 'public folder'
+
+
+
+
+IV.src -
+-->'src' it's a single folder to all created react files are  there 
+-->Into the src folder each & every doc will be there like angular file
+-->Into the src folder main files are "App.js", "index.js"
+
+
+
+
+=>Build Tool - react-scripts/parcel/webpack/gulp........
+-->webpack - covert/compile the individual files like .js, .css, .jpg, .png  to create a final folder
+to host on your browser
+
+
+
+=>You can create a self script to start a document into the 'package.json'
+-->"mynsstart": "react-scripts start"
+-->Into the terminal Terminate batch job (Y/N)? Y using CTRL+C
+-->Run into terminal using command 'npm run mynsstart'
+
+
+
+=>ReactDOM - It's a object & import from 'react-dom'
+
+=>This below function are react component;
+function App() {
+  return (
+    
+  );
+}
+
+export default App;
+
+
+=>In a single file like 'App.js' to create a multiple react components
+
