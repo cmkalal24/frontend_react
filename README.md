@@ -1,81 +1,9 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
 
-
-==========================================REACTJS TUTORIAL===============================================
-
-
-=======>1.Introdunction of ReactJs & Installation(13-11-2024)
+# 1.Introdunction of ReactJs & Installation(13-11-2024)
 
 
 // #React - 
@@ -229,11 +157,11 @@ II.git clone(git regular downloads )
 
 
 
------------------------------------------------------------------------------------------------
+===============================================================================================
 
 
 
-=======>2.React Components(14-11-2024)
+# 2.React Components(14-11-2024)
 
 
 
@@ -347,4 +275,243 @@ export default App;
 
 
 =>In a single file like 'App.js' to create a multiple react components
+
+
+
+
+===============================================================================================
+
+
+
+# 3.Types of Components, JSX  & Modules(15-11-2024)
+
+
+
+// #Types of Component - 
+
+
+
+=>If you run to default homee.html page 
+<!-- Server Configure - Default Filename - re-route - change to home.html -->
+
+
+
+=>There are two types of Components -
+-->I.Class Component - It's basically a Class
+-->II.Functional Component - It's a normal function
+
+
+
+-->I.Class Component - It's basically a Class
+
+=>We write the Function Component into the "home.js" like below here;
+class Homee extends React.Component() {
+
+    render(){
+
+      return(
+            Html code here..
+      )
+    };
+}
+
+export default Homee;
+
+=>In class component pre-define class which is going to work automatically achive a class component
+
+
+
+
+-->II.Function Component - It's a normal function
+
+=>We write the Function Component into the "App.js" like below here;
+function App() {
+  return (
+      Html code here..
+  );
+}
+
+export default App;
+
+=>In a function component hit a function executed & after over the function
+
+
+
+
+
+
+
+// #JSX - (JavaScript XML)
+
+
+=>This is called JSX - JavaScript XML
+function App(){
+
+  return (
+    div-/div - return html code here..
+  )
+}
+
+
+
+
+
+// #Modules - Two Approach
+
+I.CommonJS Module/Traditional Approach - To use in JavaScript
+-->require("../../react");
+-->require("../app.js");
+-->require("../Homee.js");
+
+==>Both are same thing to do 
+
+II.ES6 Module- To module concept
+-->'export' one package - import on other side
+-->Where we created code to export him & As the same here 'import' the module name
+
+
+=>Diff between require vs import-export
+
+require                                 vs                              import-export 
+complete the file is brought                                            single module
+one by one  /Sychronous /blocked                                        parallel/Asychronous 
+e.g require("../../react");                                   e.g import module1, import module2, import module3
+require - anywhere of page                                              import-hoisting(In proper order)  
+require - If condition                                                  import - No If-Else condition
+e.g if(){ require - allowed}                                            e.g if(){ import //Not Allowed } 
+
+    
+
+=>Modules - variable, function, component 
+
+=>Default keyword - to export the files
+-->Default - import Homee from './Homee';
+-->Non-default - import Homee, {Homee2} from './Homee';
+
+
+=>You can create a multiple class like export like below;
+class Homee2();
+export  Homee2;
+module.exports = {
+  
+  //All modules to exports here
+}
+
+
+
+
+
+
+===============================================================================================
+
+
+
+# 4.(16-11-2024)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
 
